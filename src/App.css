@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html {
+  font-size: 62.5%;
+  background: #171717;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.main-div h1{
+text-align: center;
+font-size: 3rem;
+margin-top: 1rem;
+font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.child-div {
+  width:80%;
+  margin: 10rem 14rem;
+}
+
+.child-div h2  {
+  color: #fff;
+  font-size: 2.0rem;
+  padding: 2rem 0rem;
+  text-transform: capitalize;
+}
+
+input {
+  min-width: 50rem;
+  height: 3.4rem;
+  padding: 2rem 1.2rem;
+  font-size: 1.8rem;
+  font-size: 1.8rem;
+  line-height: 1.42857143;
+  color: rgb(58, 57, 57);
+  background-color: #545454;
+  color: #fff;
+  background-image: none;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+input,
+input:focus,
+input:active,
+input:active:focus {
+  border: none;
+  padding: 2.3rem 1.5rem;
+  outline: none;
+}
+
+input {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+input::placeholder{
+  color: #fff;
+}
+
+input:focus {
+  -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+
+.todo-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.showItems {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.eachItem {
+  display: flex;
+  color: #fff;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.7rem;
+
+  width: fit-content;
+  word-break: break-word;
+  
+  justify-content: space-between;
+}
+
+.taskindex{
+  font-size: 2.5em;
+    font-weight: 600;
+    padding: 0.9em 0em;
+    margin-right: 0.3em;
+}
+
+
+.card-bottom h3 {
+  cursor: pointer;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.taskcard{
+  color: white;
+  opacity: 0.8;
+  width: 36rem;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+  word-break: break-word;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskcard img{
+  position: relative;
+  top: 2rem;
+  left: 33.6rem;
+  z-index: 2;
+}
+
+.card-upper{
+  font-size: 2.5em;
+  color: white;
+  font-weight: 900;
+  margin: 1.2rem 0em;
+  padding: 1rem 1rem;
+}
+
+.card-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.2rem 0;
+  padding: 1rem 1rem;
+}
+
+
+.addItems {
+  display: flex;
+  width: 71rem;
+  justify-content: space-between;
+}
+
+
+.eachItem h3:hover {
+  color: #c620a7;
+}
+
+.btn {
+  width: 13em;
+  padding: 0.7rem 1rem;
+  font-weight: 900;
+  border-radius: 6px;
+  background-color: #c620a7;
+  color: white;
+  cursor: pointer;
 }
